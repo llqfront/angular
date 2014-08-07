@@ -12,6 +12,8 @@ define(function(require, exports, module){
 		// app.controller('TestController',function($scope,testFactory){
 		// 	$scope.customers = testFactory.lable();
 		// })
+	
+		// * controller new define methods
 		var controllers = {};
 		controllers.TestController = function($scope,testFactory){
 			$scope.customers = testFactory.lable();

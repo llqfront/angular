@@ -11,6 +11,8 @@ define(function(require, exports, module){
 					// ];
 		   //      }
 		   //  }
+
+		   // * edit new methods
 		   var data = [
 				{'id' : 1, 'name':'Ted', 'total': 5.996},
 				{'id' : 2, 'name':'Michelle', 'total': 10.996},
