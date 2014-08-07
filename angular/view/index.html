@@ -1,0 +1,13 @@
+<div ng-controller="TestController" class="">
+	search: <input type="text" ng-model="searchText"/>
+	{{searchText}}
+	<h3>Customers:</h3>
+	<table>
+		<tr ng-repeat="cust in customers | filter:searchText">
+			<td>{{ cust.name }}</td>
+			<td>{{ cust.total | currency }}</td>
+		</tr>
+	</table>
+	<a href="#/book">book</a>
+	<a href="#/test">test</a>
+</div>
