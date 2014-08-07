@@ -13,9 +13,13 @@ define(function(require, exports, module){
 		// 	$scope.customers = testFactory.lable();
 		// })
 	
+		
+
 		// * controller new define methods
 		var controllers = {};
-		controllers.TestController = function($scope,testFactory){
+		controllers.TestController = function($scope,testFactory,$location,$routeParams){
+			// console.log($location.search())
+			// console.log($routeParams)
 			$scope.customers = testFactory.lable();
 		}
 		// controllers.TestController2 = function($scope,testFactory){

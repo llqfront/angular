@@ -19,6 +19,9 @@ define(function(require, exports, module){
              templateUrl: '/view/test.html',
              controller: 'txController'
            })
+         .otherwise({
+		      redirectTo:'/'
+		    });
     });
 
 	// app.controller('BookController',function($scope){
