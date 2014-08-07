@@ -9,7 +9,15 @@ define(function(require, exports, module){
 			$scope.testId = 5;
 		})
 
-		app.controller('TestController',function($scope,testFactory){
+		// app.controller('TestController',function($scope,testFactory){
+		// 	$scope.customers = testFactory.lable();
+		// })
+		var controllers = {};
+		controllers.TestController = function($scope,testFactory){
 			$scope.customers = testFactory.lable();
-		})
+		}
+		// controllers.TestController2 = function($scope,testFactory){
+		// 	$scope.customers = testFactory.lable();
+		// }
+		app.controller(controllers)
 })
