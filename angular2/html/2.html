@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test2</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/t1.css">
+	<script src="../js/sea.js"></script>
+</head>
+<body>
+<div class="m960" ng-app="myApp">
+	<ul ng-controller="TestCtrl">
+		<li ng-repeat="item in second">{{item.title}}</li>
+	</ul>
+</div>
+<script src="../js/lib/angular.js"></script>
+<script>
+var myAppModule = angular.module('myApp',[])
+myAppModule.controller('TestCtrl',function($scope){
+	$scope.second = [
+			{title:'标题一'},
+			{title:'标题二'},
+			{title:'标题三'},
+			{title:'标题四'},
+			{title:'标题五'},
+			{title:'标题六'},
+			{title:'标题七'},
+			{title:'标题八'},
+			{title:'标题九'},
+			{title:'标题十'}
+		]
+})
+</script>
+</body>
+</html>

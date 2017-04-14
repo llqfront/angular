@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>第一个例子</title>
+	<link rel="stylesheet" href="../../css/index.css">
+</head>
+<body ng-app>
+<div class="m960 t10" ng-controller="HelloAngular">
+	<h1>{{greating.text}},Angularjs</h1>
+	<h2><span ng-bind="greating.text"></span>,Angularjs</h2>
+	
+	<h3><input type="text" ng-model="greating.text"/>{{greating.text}},Angularjs</h3>
+</div>
+<script src="../../js/lib/angular.js"></script>
+<script>
+	function HelloAngular($scope){
+		$scope.greating = {
+			text:'hello'
+		}
+	}
+</script>
+</body>
+</html>

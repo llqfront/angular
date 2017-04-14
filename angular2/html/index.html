@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>app</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="../js/sea.js"></script>
+	<script src="../js/lib/angular.js"></script>
+</head>
+<body>
+<div class="m960">
+	<div id="J_myapp" ng-view></div>
+</div>
+<script>
+seajs.use('app',function(app){
+	app.init({id:'J_myapp'});
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<div ng-controller="txController">
+<div class="test">
+	{{olive}}
+	<p class="show-olive-btn" ng-click="showDetail(olive)">btn</p>
+	 <div class="test" ng-show="olive.oliveDetail">
+	        test
+	</div>
+</div>
+<br>
+<br>
+<br>
+<table>
+	<tr ng-repeat="olive in test">
+	<td>
+	    <p class="show-olive-btn" ng-click="showDetail(olive)">rpbtn</p>
+	    {{olive}}
+	    {{olive.oliveDetail}}
+	    <div class="test" ng-show="olive.oliveDetail">
+	         test
+	    </div>
+	</td>
+	</tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+test<br/>
+	<a href="#/">反回首页</a>
+</div>

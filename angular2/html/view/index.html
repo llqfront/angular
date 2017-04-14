@@ -1,0 +1,34 @@
+<div ng-controller="TestController" class="">
+	search: <input type="text" ng-model="searchText"/>
+	{{searchText}}
+	<h3>Customers:</h3>
+	{{expItem}}
+	<div date-select is-disabled="false" year="expItem.start_year" day="expItem.start_day" is-required="true"></div>
+	<div city-select city="expItem.city" province="expItem.province" is-required="true"></div>
+	<select name="" id="" ng-model="searchTextd">
+		<option value="1">dsafasfa</option>
+		<option value="2">dddd</option>
+		<option value="3">dsdddafasfa</option>
+		<option value="41">11</option>
+		<option value="5">dsa333fasfa</option>
+	</select>
+	{{searchTextd}}
+	<input type="button" id="bbbb" value="test"/>
+	<table>
+		<tr>
+			<td>id</td>
+			<td>标题</td>
+			<td>价格</td>
+		</tr>
+		<tr ng-repeat="cust in customers | filter:searchText">
+			<td width="80">{{ cust.id | filterTest}}</td>
+			<td width="80">{{ cust.name }}</td>
+			<td width="80">{{ cust.total | currency }}</td>
+		</tr>
+	</table>
+	{{expItem2}}
+	<div date-select is-disabled="false" year="expItem2.start_year" day="expItem2.start_day" is-required="true"></div>
+	<br/>
+	<h3>去<a href="#/book">book</a>页面看看</h3>
+	<h3>去<a href="#/test">test</a>页面看看</h3>
+</div>

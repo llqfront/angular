@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>进阶</title>
+	<link rel="stylesheet" href="../../css/index.css">
+	<script src="../../js/sea.js"></script>
+	<style>
+		ul li span {padding: 0 20px;}
+		ul li var {font-style: normal;color: #666;}
+	</style>
+</head>
+<body>
+<div class="m960 t10">
+	<div id="J_wrap" ng-controller="WrapCtrl">
+		<h3><input type="text" ng-model="search"/>{{search}},Angular</h3>
+		<h1>{{greating.text}},Angular</h1>
+		<ul>
+			<li ng-repeat="item in people | filter:search">
+				<b>{{$index}}</b><span>{{item.name}}</span><var>{{item.language}}</var>
+			</li>
+		</ul>
+		<input type="button" ng-click="print()" value="打印">
+	</div>
+</div>
+<script src="../../js/lib/angular.js"></script>
+<script>
+seajs.use('wrap',function(app){
+	app.init({
+		id:'J_wrap'
+	})
+})
+</script>
+</body>
+</html>

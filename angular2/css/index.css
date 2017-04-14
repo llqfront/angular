@@ -1,0 +1,81 @@
+body, textarea, input, select, option {
+    font-size: 12px;
+    color: #333;
+    font-family: 'Microsoft Yahei', Tahoma, Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+body, h1, h2, h3, h4, h5, h6, blockquote, ol, ul, dl, dd, p, textarea, input, select, option, form {
+    margin: 0;
+}
+ol, ul, textarea, input, option, th, td {
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+}
+li {
+    list-style-type: none;
+}
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+.clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+a, textarea, input, select {
+    outline: none
+}
+textarea {
+    overflow: auto;
+    resize: none;
+}
+.img img {
+    display: block;
+}
+a img {
+    border: none;
+}
+.z_index {
+    position: fixed;
+    _position: absolute;
+    z-index: 999;
+    display: none;
+    overflow: hidden;
+}
+.pr {
+    position: relative;
+}
+.pa {
+    position: absolute;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+a:hover {
+    text-decoration: underline;
+}
+.m960 {
+    margin: 0 auto;
+    width: 960px;
+}
+.t10 {
+    margin-top: 10px;
+}

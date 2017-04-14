@@ -1,0 +1,30 @@
+<div ng-controller="BookController">
+<table>
+	<tr ng-repeat="cust in book">
+		<td width="80">{{ cust.id}}</td>
+		<td width="80">{{ cust.name }}</td>
+		<td width="80">{{ cust.total | currency }}</td>
+	</tr>
+<div class="tab">
+	<span class="{{curShow=='register'?'current':''}}" ng-click="switchView('register')">个人注册</span>
+	<span class="{{curShow=='login'?'current':''}}" ng-click="switchView('login')">个人登录</span>
+	<div class="{{curShow!='register'?'hide':''}}">
+	    register
+	</div>
+	<div class="{{curShow!='login'?'hide':''}}">
+	    login
+	</div>
+</div>
+</table>
+	book<br/>
+	book<br/>
+	book<br/>
+	book<br/>
+	book<br/>
+	book<br/>
+	book<br/>
+	book<br/>
+	book<br/>
+book<br/>
+	<a href="#/">反回首页</a>
+</div>

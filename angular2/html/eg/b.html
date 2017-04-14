@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>第二个例子</title>
+	<link rel="stylesheet" href="../../css/index.css">
+	<style>
+		ul li span {padding: 0 20px;}
+		ul li var {font-style: normal;color: #666;}
+	</style>
+</head>
+<body>
+<div class="m960 t10" ng-app="myApp" ng-controller="ShowListCtrl">
+	<ul>
+		<li ng-repeat="item in people">
+			<b>{{$index}}</b><span>{{item.name}}</span><var>{{item.language}}</var>
+		</li>
+	</ul>
+</div>
+<script src="../../js/lib/angular.js"></script>
+<script>
+var app = angular.module('myApp',[]);
+app.controller('ShowListCtrl',function($scope){
+	$scope.people = [
+		{name:'前端工程师',language:'javascript'},
+		{name:'C语言工程师',language:'c语言'},
+		{name:'java工程师',language:'java'},
+		{name:'php工程师',language:'php'},
+		{name:'ruby工程师',language:'ruby'},
+		{name:'python工程师',language:'python'},
+		{name:'mongo',language:'mongodb'}
+	]; 
+})
+</script>
+</body>
+</html>

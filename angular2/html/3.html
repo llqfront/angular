@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test3</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="../js/sea.js"></script>
+	<script src="../js/lib/angular.js"></script>
+</head>
+<body>
+<div class="m960">
+	<div id="J_start" class="first-example" ng-controller="FirstCtrl">
+		<ul>
+			<li ng-repeat="item in firstData"><a href="{{item.id}}">{{item.title}}</a><b ng-bind="item.content"></b><var>{{item.time}}</var></li>
+		</ul>
+	</div>
+</div>
+<script>
+	seajs.use('first_example',function(app){
+		app.firstInit({
+			id:'J_start'
+		})
+	})
+</script>
+</body>
+</html>

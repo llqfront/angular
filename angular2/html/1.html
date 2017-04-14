@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test1</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/t1.css">
+	<script src="../js/sea.js"></script>
+</head>
+<body ng-app>
+<div class="m960">
+<div ng-controller="TestCtrl">
+	<form action="">
+		<p>{{first.text}},word</p>
+		<input type="text" ng-model="test">
+		<p>{{test}}</p>
+		<p ng-bind="test"></p>
+	</form>		
+</div>
+</div>
+<script src="../js/lib/angular.js"></script>
+<script>
+	function TestCtrl($scope){
+		$scope.first = {
+			text:'hello'
+		}
+	}
+</script>
+</body>
+</html>
